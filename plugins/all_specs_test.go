@@ -28,6 +28,7 @@ func TestAllSpecs(t *testing.T) {
 	r.AddSpec(PayloadEncoderSpec)
 	r.AddSpec(RstEncoderSpec)
         r.AddSpec(SnappyDecoderSpec)
+        r.AddSpec(SnappyEncoderSpec)
 
 	gospec.MainGoTest(r, t)
 }
